@@ -1,0 +1,213 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            text-align: center;
+            font-family: 'Inter', system-ui, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f1a9f7;
+            color: #030303;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            min-height: 100vh;
+        }
+
+
+        .theory-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .theory-title {
+            color: #333;
+            border-bottom: 2px solid #4a4a4a;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .theory-description {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .theory-rules {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .theory-rules h3 {
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .theory-rules ul {
+            list-style-type: disc;
+            padding-left: 30px;
+        }
+
+        .theory-rules li {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            font-family: 'Times New Roman', Times, serif;
+            color: #000103;
+        }
+
+        #content {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: #c2fc9e;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .controls {
+            padding: 10px;
+            background-color: #fdfefe;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+        }
+
+        .toggle-btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            background-color: #2563eb;
+            color: white;
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .toggle-btn:hover {
+            background-color: #1e40af;
+        }
+
+        .toggle-btn.stop {
+            background-color: #ef4444;
+        }
+
+        .toggle-btn.stop:hover {
+            background-color: #b91c1c;
+        }
+
+        select {
+            padding: 6px 12px;
+            border: 1px solid #4b5563;
+            border-radius: 6px;
+            background-color: #1e293b;
+            color: #f1f5f9;
+            font-size: 0.875rem;
+            transition: all 0.2s ease;
+        }
+
+        select:hover,
+        select:focus {
+            border-color: #2563eb;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.5);
+        }
+
+        label {
+            color: #94a3b8;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        #status {
+            /* margin: 10px 0; */
+            color: #060606;
+            font-size: 1.5rem;
+            /* min-height: 20px; */
+        }
+
+        .disk {
+            margin: 0;
+            padding: 0;
+            position:absolute;
+            background-color: #fb0505;
+            border-radius: 3px;
+            height: 19px;
+            transition: all 0.3s ease;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .pole {
+            position: absolute;
+            background-color:rgb(47, 23, 12);
+            border-radius: 4px 4px 0 0;
+        }
+
+        .base {
+            position: absolute;
+            background-color: rgb(47, 23, 12);
+            border-radius: 4px;
+        }
+.theory {
+  margin-top: 20px;
+  padding: 10px;
+  /* border: 1px solid #ccc;
+  background-color: #f9f9f9; */
+}
+.theory h2 {
+  margin-top: 0;
+}
+.theory p {
+  margin: 10px 0;
+}
+.theory ul {
+  margin: 10px 0;
+  padding-left: 20px;
+  text-align: left;
+}
+.theory li {
+  margin: 5px 0;
+}
+
+
+        @media (max-width: 600px) {
+            #content {
+                height: 300px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .controls {
+                gap: 0.5rem;
+                padding: 8px;
+            }
+            .toggle-btn {
+                padding: 6px 14px;
+                font-size: 0.8rem;
+            }
+            select {
+                padding: 5px 10px;
+                font-size: 0.8rem;
+            }
+        }
